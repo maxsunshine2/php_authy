@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Nunito&display=swap');
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//creating custom maps
+
+@each $key,
+$value in $theme-colors {
+    .border-start-#{$key} {
+        border-left: 3px solid $value;
+        border-top-left-radius:calc(.25rem - 1px);
+        border-top-right-radius:calc(.25rem - 1px);
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "php-authy/maxwell",
+    "description": "a small but powerful authentication library with zero dependencies",
+    "type": "project",
+    "require": {
+        "fakerphp/faker": "^1.21"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpAuthy\\Maxwell\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "y"
+        }
+    ],
+    "minimum-stability": "stable"
+}

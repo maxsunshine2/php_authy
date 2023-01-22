@@ -1,0 +1,61 @@
+@import url("app.css");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,500,600");
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    /* line-height: 1.6rem; */
+    /* letter-spacing: .004em; */
+    /* color: #958d9e; */
+    /* background: #1aa19c; */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background: #1aa19c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none
+}
+
+#loader .loading-icon {
+    width: 42px;
+    height: 45px;
+    animation: loadingAnimation 0.5s ease-in-out infinite
+}
+
+#loader.hidden {
+    display: none
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(180deg)
+    }
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(226, 161, 156, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
